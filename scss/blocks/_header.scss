@@ -1,0 +1,29 @@
+.header {
+    padding: 18px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 22px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item-link {
+        font-family: "Sailec";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.25px;
+        color: #666666D9;
+    }
+}

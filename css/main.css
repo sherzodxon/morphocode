@@ -308,16 +308,46 @@ template {
   display: none;
 }
 
+/* titillium-web-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/titillium-web-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* titillium-web-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../fonts/titillium-web-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-family: "Sailec";
+  src: url("../../fonts/Sailec-Bold.woff2") format("woff2"), url("../../fonts/Sailec-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Titillium Web", sans-serif;
+  color: #434A54;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 img {
@@ -329,14 +359,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-}
-
 .visually-hidden {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -345,8 +370,55 @@ h1, h2, h3, h4 {
 }
 
 .container {
-  width: 100%;
-  max-width: 1200px;
+  width: 1080px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+.header {
+  padding: 18px 0;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  margin-right: 22px;
+}
+.header__item:last-child {
+  margin-right: 0;
+}
+.header__item-link {
+  font-family: "Sailec";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.25px;
+  color: rgba(102, 102, 102, 0.8509803922);
+}
+
+.intro__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intro__content {
+  width: 522px;
+}
+.intro__slogan {
+  font-family: "Sailec";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58.08px;
+  letter-spacing: 0.25px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
