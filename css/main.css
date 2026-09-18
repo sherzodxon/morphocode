@@ -343,7 +343,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Titillium Web", sans-serif;
-  color: #434A54;
 }
 
 ul, ol {
@@ -379,6 +378,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
+  color: #434A54;
 }
 
 .header {
@@ -387,6 +387,7 @@ a {
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__list {
   display: flex;
@@ -408,8 +409,8 @@ a {
 
 .intro__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .intro__content {
   width: 522px;
@@ -421,4 +422,37 @@ a {
   line-height: 58.08px;
   letter-spacing: 0.25px;
   margin-bottom: 20px;
+  color: #4A4A4A;
+}
+
+.benefits {
+  margin-bottom: 50px;
+}
+.benefits__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits__section:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.benefits__content {
+  width: 458px;
+}
+.benefits__title {
+  font-family: "Sailec";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43.56px;
+  letter-spacing: 0.25px;
+  color: #434A54;
+  margin-bottom: 15px;
+}
+.benefits__text {
+  margin-bottom: 28px;
+}
+.benefits__link {
+  color: #1D6FF3;
+  line-height: 25.6px;
+  letter-spacing: 0.25px;
 }/*# sourceMappingURL=main.css.map */

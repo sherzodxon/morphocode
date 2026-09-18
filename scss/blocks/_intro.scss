@@ -1,12 +1,12 @@
 .intro {
     &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex;
     }
-    &__content{
+
+    &__content {
         width: 522px;
     }
+
     &__slogan {
         font-family: "Sailec";
         font-weight: 400;
@@ -14,5 +14,6 @@
         line-height: 58.08px;
         letter-spacing: 0.25px;
         margin-bottom: 20px;
+        color: $title-color;
     }
 }

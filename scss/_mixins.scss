@@ -1,5 +1,12 @@
-@mixin reset-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+@mixin sailec-title {
+    font-family: 'Sailec';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43.56px;
+    letter-spacing: 0.25px;
+}
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

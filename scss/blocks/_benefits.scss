@@ -1,0 +1,33 @@
+.benefits {
+    margin-bottom: 50px;
+
+    &__section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__content {
+        width: 458px;
+    }
+
+    &__title {
+        @include sailec-title;
+        color: $text-color;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+    }
+
+    &__link {
+        color: $blue;
+        line-height: 25.6px;
+        letter-spacing: 0.25px;
+    }
+}
